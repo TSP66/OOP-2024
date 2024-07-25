@@ -17,7 +17,7 @@ void two_five_nine(int array[], int n){
             break;
         }
     }
-    std::cout << "2" << num_twos;
-    std::cout << ";5" << num_fives;
-    std::cout << ";9" << num_nines << ";" << std::endl;
+    std::cout << "2:" << num_twos;
+    std::cout << ";5:" << num_fives;
+    std::cout << ";9:" << num_nines << ";" << std::endl;
 }
