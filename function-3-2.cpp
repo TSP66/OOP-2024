@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 
 int median_array(int array[], int n){

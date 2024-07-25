@@ -2,7 +2,6 @@
 #include <iostream>
 
 double weighted_average(int array[], int n){
-    std::vector<int> values;
     std::map<int, int> occurences;
     double mean = 0.0;
     for (int i = 0; i < n; i++){
