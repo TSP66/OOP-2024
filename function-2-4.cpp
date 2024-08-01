@@ -2,6 +2,9 @@
 
 using namespace std;
 
+int array_max(int integers[],int length);
+int array_min(int integers[],int length);
+
 int sum_min_max(int integers[],int length){
     if (length < 1) return -1;
     return array_min(integers,length)+array_max(integers,length);
