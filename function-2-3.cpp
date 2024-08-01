@@ -1,7 +1,7 @@
 
 bool is_palindrome(int integers[],int length){
     for (int i = 0; i < length/2; i++){
-        if (integers[i] != integers[length-i]){
+        if (integers[i] != integers[length-i-1]){
             return false;
         }
     }
