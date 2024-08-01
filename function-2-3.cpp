@@ -1,6 +1,6 @@
 
 bool is_palindrome(int integers[],int length){
-    for (int i = 0; i < length; i++){
+    for (int i = 0; i < length/2; i++){
         if (integers[i] != integers[length-i]){
             return false;
         }
