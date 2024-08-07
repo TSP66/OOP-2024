@@ -49,7 +49,7 @@ int main(){
     //Question 4
     double array2[] = {1.0,2.0,3.0,4.0};
     double maximum = arrayMax(array2, 4);
-    assert(value == 4.0);
+    assert(maximum == 4.0);
 
 
 
