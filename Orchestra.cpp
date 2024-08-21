@@ -29,7 +29,7 @@ bool Orchestra::has_instrument(std::string instrument){
 } 
 
 Musician *Orchestra::get_members(){
-    return Orchestra::members;
+    return Orchestra::members+1;
 }        // returns the array of members of the orchestra
 
 // returns true and adds new musician to the orchestra if the orchestra is not full
