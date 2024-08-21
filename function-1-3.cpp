@@ -6,8 +6,10 @@ PersonList deepCopyPersonList(PersonList pl){
     copy.numPeople = pl.numPeople;
     copy.people = new Person[copy.numPeople];
     for (int i = 0; i < pl.numPeople; i++){
-        copy.people[i].name = pl.people[i].name;
-        copy.people[i].age = pl.people[i].age;
+        //copy.people[i].name = pl.people[i].name;
+        //copy.people[i].age = pl.people[i].age;
+
+        copy.people[i] = pl.people[i];
     }
     return copy;
 }
