@@ -49,6 +49,9 @@ int ParkingLot::countOverstayingVehicles(int maxParkingDuration){
     }
     return count;
 }
+int ParkingLot::getCount(){
+    return numVehicles;
+}
 
 ParkingLot::~ParkingLot(){
     delete [] ParkingLot::spotsFree;
