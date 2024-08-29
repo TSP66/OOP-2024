@@ -1,5 +1,5 @@
 #include <iostream>
-#include "parkinglot.h"
+#include "ParkingLot.h"
 
 ParkingLot::ParkingLot(int numVehicles){
     ParkingLot::maxVehicles = numVehicles;

@@ -1,8 +1,9 @@
 #include <iostream>
-#include "parkinglot.h"
-#include "car.h"
-#include "motorbike.h"
-#include "bus.h"
+#include <memory>
+#include "ParkingLot.h"
+#include "Car.h"
+#include "Motorbike.h"
+#include "Bus.h"
 
 int main(){
     ParkingLot lot(10);
@@ -10,19 +11,19 @@ int main(){
     for (int i = 0; i < 10; i++){
         int input;
         std::cin >> input;
-        switch (input){
-            case 0:
-            Car * car = new Car(i);
-            lot.parkVehicle(car);
-            break;
-            case 1:
-            Bus * bus = new Bus(i);
-            lot.parkVehicle(bus);
-            break;
-            default:
-            Motorbike * motorbike = new Motorbike(i);
-            lot.parkVehicle(motorbike);
-            break;
+        switch (input) {
+            case 0: {
+                lot.parkVehicle(new Car(i));
+                break;
+            }
+            case 1: {
+                lot.parkVehicle(new Bus(i));
+                break;
+            }
+            default: {
+                lot.parkVehicle(new Motorbike(i));
+                break;
+            }
         }
     }
     int ID;
