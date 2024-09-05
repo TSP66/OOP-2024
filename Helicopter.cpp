@@ -10,10 +10,10 @@ void Helicopter::fly(int headwind, int minutes){
     float delta_fuel;
     if (extraWeight < 0) 
         extraWeight = 0;
-    if (headwind > 40){
-        delta_fuel -= (float) minutes *(0.4+0.01*(float) extraWeight);
+    if (headwind >= 40){
+        delta_fuel = (float) minutes *(0.4+0.01*(float) extraWeight);
     } else {
-        delta_fuel -= minutes*(0.4+0.01* (float) extraWeight);
+        delta_fuel = minutes*(0.4+0.01* (float) extraWeight);
     }
     if (Helicopter::fuel-delta_fuel < 20.0){
         return;
@@ -22,4 +22,11 @@ void Helicopter::fly(int headwind, int minutes){
         Helicopter::fuel-=delta_fuel;
         Helicopter::numberOfFlights++;
     }
+}
+
+std::string Helicopter::get_name(){
+    return Helicopter::name;
+}
+void Helicopter::set_name(std::string name){
+    Helicopter::name = name;
 }

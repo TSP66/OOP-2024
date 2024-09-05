@@ -19,10 +19,10 @@ int Airplane::get_numPassengers(){
 }
 void Airplane::fly(int headwind, int minutes){
     float delta_fuel;
-    if (headwind > 60){
-        delta_fuel -= (float) minutes *(0.5+0.001*(float) Airplane::numPassengers);
+    if (headwind >= 60){
+        delta_fuel = (float) minutes *(0.5+0.001*(float) Airplane::numPassengers);
     } else {
-        delta_fuel -= minutes*(0.25+0.001* (float) Airplane::numPassengers);
+        delta_fuel = minutes*(0.25+0.001* (float) Airplane::numPassengers);
     }
     if (Airplane::fuel-delta_fuel < 20.0){
         return;
@@ -31,4 +31,8 @@ void Airplane::fly(int headwind, int minutes){
         Airplane::fuel-=delta_fuel;
         Airplane::numberOfFlights++;
     }
+}
+
+void Airplane::set_numPassengers(int value){
+    Airplane::numPassengers = value;
 }

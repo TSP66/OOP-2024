@@ -9,4 +9,6 @@ class Helicopter: public AirVehicle{
     public:
     Helicopter(int w, std::string n);
     void fly(int headwind, int minutes);
+    std::string get_name();
+    void set_name(std::string name);
 };

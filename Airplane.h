@@ -9,5 +9,5 @@ class Airplane: public AirVehicle{
     void reducePassengers(int x);
     int get_numPassengers();
     void fly(int headwind, int minutes);
-
+    void set_numPassengers(int value);
 };
