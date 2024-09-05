@@ -13,7 +13,7 @@ void Helicopter::fly(int headwind, int minutes){
     if (headwind >= 40){
         delta_fuel = (float) minutes * (0.4+0.01*(float) extraWeight);
     } else {
-        delta_fuel = (float) minutes * (0.4+0.01*(float) extraWeight);
+        delta_fuel = (float) minutes * (0.18+0.01*(float) extraWeight);
     }
     if (Helicopter::fuel-delta_fuel < 20.0){
         return;
