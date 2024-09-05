@@ -1,3 +1,6 @@
+#ifndef HELICOPTER_H
+#define HELICOPTER_H
+
 #include <iostream>
 #include <string>
 
@@ -12,3 +15,5 @@ class Helicopter: public AirVehicle{
     std::string get_name();
     void set_name(std::string name);
 };
+
+#endif

@@ -15,7 +15,7 @@ void AirVehicle::refuel(){
     AirVehicle::fuel = 100.0;
 }
 void AirVehicle::fly(int headwind, int minutes){
-
+    AirVehicle::numberOfFlights++;
 }
 
 int AirVehicle::get_weight(){

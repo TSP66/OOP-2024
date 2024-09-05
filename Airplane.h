@@ -1,3 +1,6 @@
+#ifndef AIRPLANE_H
+#define AIRPLANE_H
+
 #include "AirVehicle.h"
 
 class Airplane: public AirVehicle{
@@ -11,3 +14,5 @@ class Airplane: public AirVehicle{
     void fly(int headwind, int minutes);
     void set_numPassengers(int value);
 };
+
+#endif
