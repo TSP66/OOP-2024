@@ -6,7 +6,7 @@ Helicopter::Helicopter(int w, std::string n) : AirVehicle(w){
     Helicopter::name = n;
 }
 void Helicopter::fly(int headwind, int minutes){
-    int extraWeight = Helicopter::weight- 5690;
+    int extraWeight = Helicopter::weight - 5670;
     float delta_fuel;
     if (extraWeight < 0) 
         extraWeight = 0;
