@@ -8,8 +8,9 @@ bool University::addCourse(int id, std::string name){
     if(University::numCourses == University::maxCourses){
         return false;
     }
-    University::courses[University::numCourses] = Course(10, id, name);
-    University::gradebooks[University::numCourses] = Gradebook(10);
+    //University::courses[University::numCourses] = Course(10, id, name);
+    //University::gradebooks[University::numCourses] = Gradebook(10);
+    return true;
 }
 
 University::~University(){

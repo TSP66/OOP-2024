@@ -30,6 +30,6 @@ void Grade::set_value(int value){
 int Grade::get_course_id(){
     return Grade::course_id;
 }
-void Grade::set_student_id(int course_id){
+void Grade::set_course_id(int course_id){
     Grade::course_id = course_id;
 }
