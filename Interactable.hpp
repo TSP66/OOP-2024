@@ -16,7 +16,7 @@ class Interactable: public GridItem{
     Interactable() : GridItem(0, 0, 0, 0) {
         Interactable::interactables++;
     }
-    Interactable(int x, int y, int width, int height) : GridItem(0, 0, width, height){
+    Interactable(int x, int y, int width, int height) : GridItem(x, y, width, height){
         Interactable::interactables++;
     }
 
