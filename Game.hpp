@@ -37,15 +37,15 @@ class Game{
     bool displayState(){
         switch (Game::state){
             case WIN:
-            std::cout << "You win!";
+            std::cout << "You win!" << std::endl;
             return true;
             break;
             case LOSE:
-            std::cout << "You lose :(";
+            std::cout << "You lose :(" << std::endl;
             return true;
             break;
             case PLAYING:
-            std::cout << "Game on";
+            std::cout << "Game on" << std::endl;
             return false;
             break;
         }
