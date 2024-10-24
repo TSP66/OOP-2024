@@ -32,12 +32,11 @@ class Robot: public GridItem{
             return false;
         }
         if ((xOffset != 0) && (yOffset != 0)){
+            return true;
+        } else {
             Robot::coords.first += xOffset;
             Robot::coords.second += yOffset;
             return true;
-
-        } else {
-            return false;
         }
     }
 };
