@@ -54,6 +54,11 @@ class Game{
     void movePlayer(int dx, int dy){
         Game::player->move(dx,dy);
         std::pair<int, int> winPos(Game::width-1,Game::height-1);
+        for (auto ob : Game::obs){
+            if (ob->getCoordinates() == Game::player->getCoordinates()){
+                ob->interact(Game::player);
+            }
+        }
         if (Game::state == PLAYING){
             if (Game::player->getCoordinates() == winPos){
                 Game::state = WIN;
