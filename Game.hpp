@@ -79,6 +79,7 @@ class Game{
                 if (Game::player->getCoordinates() == position){
                     element = 'P';
                 }
+                std::cout << element;
             }
             std::cout << "\n";
         }
