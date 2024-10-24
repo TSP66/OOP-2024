@@ -66,7 +66,7 @@ class Game{
     void printGrid(){
         for (int x = 0; x < Game::width; x++){
             for (int y = 0; y < Game::height; y++){
-                std::pair<int, int> position(x,y);
+                std::pair<int, int> position(y,x);
                 char element = '_';
                 for (auto ob : Game::obs){
                     if (ob->getCoordinates() == position){
